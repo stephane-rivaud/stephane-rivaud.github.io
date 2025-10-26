@@ -16,8 +16,8 @@
 /index.html
   Cache-Control: no-cache, must-revalidate
   Content-Type: text/html; charset=UTF-8
-  Link: </styles.min.css>; rel=preload; as=style
-  Link: </profile-pic.webp>; rel=preload; as=image; type=image/webp
+  Link: </assets/css/styles.min.css>; rel=preload; as=style
+  Link: </assets/img/profile-pic.webp>; rel=preload; as=image; type=image/webp
   Link: <https://fonts.googleapis.com>; rel=preconnect
   Link: <https://fonts.gstatic.com>; rel=preconnect; crossorigin
   Link: <https://cdn.jsdelivr.net>; rel=preconnect
@@ -28,11 +28,11 @@
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: text/css; charset=UTF-8
 
-/styles.css
+/assets/css/styles.css
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: text/css; charset=UTF-8
 
-/styles.min.css
+/assets/css/styles.min.css
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: text/css; charset=UTF-8
 
@@ -71,23 +71,23 @@
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/x-icon
 
-/profile-pic.jpg
+/assets/img/profile-pic.jpg
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/jpeg
 
-/profile-pic.webp
+/assets/img/profile-pic.webp
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/webp
 
-/favicon.ico
+/assets/img/favicon.ico
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/x-icon
 
-/icon-192x192.png
+/assets/img/icon-192x192.png
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/png
 
-/icon-512x512.png
+/assets/img/icon-512x512.png
   Cache-Control: public, max-age=31536000, immutable
   Content-Type: image/png
 

@@ -199,8 +199,13 @@ http://localhost:8000
 ```
 stephane-rivaud.github.io/
 ├── index.html              # Main HTML file
-├── styles.css              # Development CSS
-├── styles.min.css          # Production CSS (minified)
+├── assets/
+│   ├── css/
+│   │   ├── styles.css      # Development CSS
+│   │   └── styles.min.css  # Production CSS (minified)
+│   ├── js/
+│   │   └── main.js         # Site interactions (PWA, filters, UI)
+│   └── img/                # Profile images, icons, favicons
 ├── service-worker.js       # PWA service worker
 ├── manifest.webmanifest    # PWA manifest
 ├── offline.html            # Offline fallback page
@@ -208,11 +213,6 @@ stephane-rivaud.github.io/
 ├── robots.txt             # Search engine directives
 ├── sitemap.xml            # XML sitemap
 ├── curriculum_vitae.pdf   # CV document
-├── profile-pic.jpg        # Profile image (JPEG)
-├── profile-pic.webp       # Profile image (WebP)
-├── icon-192x192.png       # PWA icon
-├── icon-512x512.png       # PWA icon
-├── favicon.ico            # Favicon
 ├── README.md              # This file
 ├── CHANGELOG.md           # Version history
 └── IMPROVEMENTS.md        # Technical documentation
@@ -252,18 +252,18 @@ The site uses CSS custom properties for theming:
 
 ### Minifying CSS
 
-After making changes to `styles.css`, minify for production:
+After making changes to `assets/css/styles.css`, minify for production:
 
 ```bash
 # Using online tool
 # Visit: https://cssminifier.com/
 
 # Or using Node.js
-npx clean-css-cli styles.css -o styles.min.css
+npx clean-css-cli assets/css/styles.css -o assets/css/styles.min.css
 
 # Or using Python
 pip install csscompressor
-python -m csscompressor styles.css > styles.min.css
+python -m csscompressor assets/css/styles.css > assets/css/styles.min.css
 ```
 
 ### Service Worker Updates

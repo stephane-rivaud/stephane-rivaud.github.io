@@ -7,12 +7,15 @@ const RUNTIME_CACHE = `sr-runtime-v${VERSION}`;
 const PRECACHE_URLS = [
   '/',
   '/index.html',
-  '/styles.min.css',
-  '/profile-pic.webp',
-  '/profile-pic.jpg',
+  '/assets/css/styles.min.css',
+  '/assets/js/main.js',
+  '/assets/img/profile-pic.webp',
+  '/assets/img/profile-pic.jpg',
+  '/assets/img/favicon.ico',
+  '/assets/img/icon-192x192.png',
+  '/assets/img/icon-512x512.png',
   '/offline.html',
-  '/manifest.webmanifest',
-  '/favicon.ico'
+  '/manifest.webmanifest'
 ];
 
 // Cache duration settings (in seconds)

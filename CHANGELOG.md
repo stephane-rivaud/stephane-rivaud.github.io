@@ -2,6 +2,20 @@
 
 All notable changes to the Stéphane Rivaud Academic Website have been documented in this file.
 
+## [Unreleased]
+
+### Added
+- Introduced `/assets/` hierarchy with `css`, `js`, and `img` subdirectories to align with refactor roadmap WP1.
+- Extracted all in-page behaviour into `assets/js/main.js` while preserving existing interactions and PWA registration.
+
+### Changed
+- Updated `index.html` references (preloads, favicons, profile imagery, sitemap link) to target the new asset paths.
+- Repointed `manifest.webmanifest`, `service-worker.js`, and `_headers` configuration to serve assets from the reorganised structure.
+- Adjusted README guidance to reflect the new layout and CSS build commands.
+
+### Testing
+- Verified site locally via `python3 -m http.server 8000`, confirming CSS, JS, and image assets load correctly post-move.
+
 ## [3.0.0] - 2025-01-08
 
 ### 🚨 Critical Fixes

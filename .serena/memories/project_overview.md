@@ -1,0 +1,11 @@
+# Project Overview
+- **Purpose**: Static academic portfolio for Stéphane Rivaud highlighting research, publications, teaching, and contact info. Hosted on GitHub Pages with PWA capabilities.
+- **Architecture**: Single-page `index.html` with sections (hero, about, news, publications, projects, teaching, contact). Inline JS handles filters, theme, and interactions. Assets live under `assets/` (CSS, JS, images). Service worker + manifest provide offline support.
+- **Key Files**:
+  - `index.html`: Main content, inline scripts, meta/SEO data.
+  - `assets/css/styles.css` + `styles.min.css`: Source and minified styles (manual minification).
+  - `assets/js/main.js`: Interaction logic (PWA registration, UI behaviours).
+  - `service-worker.js`, `manifest.webmanifest`, `offline.html`: PWA infrastructure.
+  - `scholar_citations_*`: Citation data snapshots used for stats.
+  - Docs: `README.md`, `CHANGELOG.md`, `IMPROVEMENTS.md`, `docs/` planning notes.
+- **Constraints**: No build tooling; minified CSS checked in manually. Service worker cache paths expect current asset locations. Site must stay lightweight and accessible (WCAG 2.1 AA).
