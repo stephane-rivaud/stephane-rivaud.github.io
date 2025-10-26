@@ -3,395 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphane Rivaud - CV</title>
-    <meta name="description"
-          content="Stéphane Rivaud - Researcher in Machine Learning at INRIA Saclay, specializing in deep learning models efficiency and scalability. View research, publications, and teaching experience.">
-    <meta name="keywords"
-          content="Machine Learning, Deep Learning, Neural Networks, Distributed AI, Decentralized AI, Generative AI, Signal Processing, Audio Processing, AI Research, INRIA Saclay">
-    <meta name="author" content="Stéphane Rivaud">
-    <meta property="og:title" content="Stéphane Rivaud - Machine Learning Researcher">
-    <meta property="og:description" content="Research in Machine Learning at INRIA Saclay">
-    <meta property="og:image" content="https://stephane-rivaud.github.io/profile-pic.jpg">
-    <meta property="og:url" content="https://stephane-rivaud.github.io">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Lora&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <title>Stéphane Rivaud</title>
+    <meta name="description" content="Stéphane Rivaud - Postdoctoral Researcher at INRIA Saclay">
     <style>
-        /* Global styles */
-        body {
-            font-family: 'Roboto', sans-serif;
+        * {
             margin: 0;
-            background-color: #f7f7f7;
-            line-height: 1.6; /* Increased line height */
-            font-size: 16px; /* Adjusted font size */
-            color: #333; /* Darker text color for better contrast */
+            padding: 0;
+            box-sizing: border-box;
         }
-
-        /* Navigation Bar */
-        nav {
-            background-color: #1a73e8;
-            color: white;
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            background: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
         }
-
-        nav a {
-            color: white;
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+        
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        
+        p {
+            margin-bottom: 12px;
+        }
+        
+        a {
+            color: #0066cc;
             text-decoration: none;
-            padding: 15px;
         }
-
-        nav a:hover {
-            background-color: #1558b0;
+        
+        a:hover {
+            text-decoration: underline;
         }
-
-        /* Header Section */
-        header {
-            text-align: center;
-            padding: 60px 20px; /* Increased padding */
-            background: linear-gradient(to right, #1a73e8, #4a90e2);
-            color: white;
+        
+        .position {
+            color: #666;
+            margin-bottom: 20px;
         }
-
-        header img {
-            width: 120px;
-            height: 120px;
+        
+        .contact {
+            margin-bottom: 32px;
+            color: #666;
+        }
+        
+        .contact a {
+            margin-right: 16px;
+        }
+        
+        .research-statement {
+            margin-bottom: 32px;
+            max-width: 65ch;
+        }
+        
+        .profile-pic {
+            float: right;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            border: 3px solid white;
+            margin-left: 24px;
+            margin-bottom: 16px;
+            object-fit: cover;
+        }
+        
+        .pub-list {
+            list-style: none;
+        }
+        
+        .pub-item {
+            margin-bottom: 24px;
+        }
+        
+        .pub-title {
+            font-weight: 600;
+        }
+        
+        .pub-authors {
+            color: #333;
+        }
+        
+        .pub-venue {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .pub-links {
+            margin-top: 4px;
+        }
+        
+        .pub-links a {
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 4px;
+        }
+        
+        .exp-item, .teach-item {
             margin-bottom: 20px;
         }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
+        
+        .exp-title {
+            font-weight: 600;
         }
-
-        .contact-info a:hover {
-            text-decoration: underline;
+        
+        .exp-meta {
+            color: #666;
+            font-size: 14px;
         }
-
-        /* Section Styling */
-        section {
-            margin: 60px 20px; /* Increased margin */
+        
+        ul.details {
+            margin-top: 8px;
+            margin-left: 20px;
         }
-
-        section h2 {
-            border-bottom: 2px solid #1a73e8;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+        
+        ul.details li {
+            margin-bottom: 4px;
         }
-
-        .card {
-            margin-bottom: 20px;
-            padding: 20px; /* Added padding */
-            background-color: #fff; /* White background for cards */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for better separation */
-        }
-
-        /* Footer Section */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1a73e8;
-            color: white;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Download Button */
-        .download-btn {
-            margin-top: 20px;
+        
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1a1a;
+                color: #e0e0e0;
+            }
+            
+            h2 {
+                border-bottom-color: #444;
+            }
+            
+            .position, .contact, .exp-meta, .pub-venue {
+                color: #999;
+            }
+            
+            .pub-authors {
+                color: #ccc;
+            }
+            
+            a {
+                color: #6fa3ff;
+            }
+            
+            .highlight {
+                background-color: #3d3400;
+            }
         }
     </style>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Stéphane Rivaud",
-            "jobTitle": "Researcher in Machine Learning",
-            "worksFor": {
-                "@type": "Organization",
-                "name": "INRIA Saclay"
-            },
-            "hasOccupation": [
-                {
-                    "@type": "Occupation",
-                    "name": "Postdoctoral Researcher",
-                    "description": "Decentralized Training of Deep Neural Networks",
-                    "startDate": "2022",
-                    "endDate": "2024",
-                    "employer": {
-                        "@type": "Organization",
-                        "name": "ISIR, Sorbonne Université"
-                    }
-                },
-                {
-                    "@type": "Occupation",
-                    "name": "PhD Researcher",
-                    "description": "Integration of Expert Knowledge into Generative Models",
-                    "startDate": "2016",
-                    "endDate": "2020",
-                    "employer": {
-                        "@type": "Organization",
-                        "name": "Sony Computer Science Laboratory, Paris"
-                    }
-                }
-            ],
-            "alumniOf": [
-                {
-                    "@type": "CollegeOrUniversity",
-                    "name": "University of Reims"
-                },
-                {
-                    "@type": "CollegeOrUniversity",
-                    "name": "IRCAM, Centre George Pompidou"
-                },
-                {
-                    "@type": "CollegeOrUniversity",
-                    "name": "ENS Rennes"
-                }
-            ],
-            "sameAs": [
-                "https://github.com/stephane-rivaud",
-                "https://www.linkedin.com/in/st%C3%A9phane-rivaud-b87458a8/",
-                "https://scholar.google.fr/citations?user=wK1ARdQAAAAJ&hl=fr"
-            ]
-        }
-    </script>
 </head>
 <body>
+    <header>
+        <img src="assets/img/profile-pic.webp" alt="Stéphane Rivaud" class="profile-pic" width="150" height="150">
+        <h1>Stéphane Rivaud</h1>
+        <p class="position">Postdoctoral Researcher · INRIA Saclay · TAU Team</p>
+        <div class="contact">
+            <a href="mailto:stephane.a.rivaud@inria.fr">Email</a>
+            <a href="https://scholar.google.fr/citations?user=wK1ARdQAAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+            <a href="https://github.com/stephane-rivaud" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="curriculum_vitae.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        </div>
+    </header>
 
-<nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main navigation">
-    <a class="navbar-brand" href="#" aria-label="Home">Stéphane Rivaud</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#research-interests" aria-label="Research Interests section">Research
-                Interests</a></li>
-            <li class="nav-item"><a class="nav-link" href="#education" aria-label="Education section">Education</a></li>
-            <li class="nav-item"><a class="nav-link" href="#research" aria-label="Research section">Research</a></li>
-            <li class="nav-item"><a class="nav-link" href="#publications"
-                                    aria-label="Publications section">Publications</a></li>
-            <li class="nav-item"><a class="nav-link" href="#teaching" aria-label="Teaching section">Teaching</a></li>
+    <section class="research-statement">
+        <p>I develop functional optimization methods for neural architecture growth and decentralized machine learning for hardware acceleration. My work focuses on efficient training methods, generative modeling, and integrating domain knowledge into deep learning systems.</p>
+    </section>
+
+    <section>
+        <h2>Publications</h2>
+        
+        <h3>Conference Papers</h3>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <div class="pub-title">Growth strategies for arbitrary DAG neural architectures</div>
+                <div class="pub-authors">S. Douka, M. Verbockhaven, T. Rudkiewicz, <strong>S. Rivaud</strong>, F. Landes, S. Chevallier, G. Charpiat</div>
+                <div class="pub-venue">ESANN 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2501.12690" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-title">PETRA: Parallel End-to-end Training with Reversible Architectures <span class="highlight">Spotlight</span></div>
+                <div class="pub-authors"><strong>S. Rivaud</strong>, L. Fournier, T. Pumir, E. Belilovsky, M. Eickenberg, E. Oyallon</div>
+                <div class="pub-venue">ICLR 2025</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2406.02052" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-title">Can forward gradient match backpropagation?</div>
+                <div class="pub-authors">L. Fournier, <strong>S. Rivaud</strong>, E. Belilovsky, M. Eickenberg, E. Oyallon</div>
+                <div class="pub-venue">ICML 2023</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2306.06968" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-title">Sampling markov models under binary equality constraints is hard</div>
+                <div class="pub-authors"><strong>S. Rivaud</strong>, F. Pachet, P. Roy</div>
+                <div class="pub-venue">JFRB 2016</div>
+                <div class="pub-links">
+                    <a href="rivaud-16a.pdf" target="_blank" rel="noopener noreferrer">[PDF]</a>
+                </div>
+            </li>
         </ul>
-    </div>
-</nav>
+        
+        <h3>Patents</h3>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <div class="pub-title">Addressing interferences in multi-channel audio mixing</div>
+                <div class="pub-authors">E. Deruty, <strong>S. Rivaud</strong></div>
+                <div class="pub-venue">US Patent 11363377, June 2022</div>
+                <div class="pub-links">
+                    <a href="https://patents.google.com/patent/US11363377B2/en" target="_blank" rel="noopener noreferrer">[Patent]</a>
+                </div>
+            </li>
+        </ul>
+        
+        <h3>Thesis & Technical Reports</h3>
+        <ul class="pub-list">
+            <li class="pub-item">
+                <div class="pub-title">Integration of Expert Knowledge in Generative Modelling: Application to Music Generation</div>
+                <div class="pub-authors"><strong>S. Rivaud</strong></div>
+                <div class="pub-venue">PhD Thesis, Université de Reims, 2020</div>
+                <div class="pub-links">
+                    <a href="https://theses.fr/2020REIMS033" target="_blank" rel="noopener noreferrer">[Link]</a>
+                </div>
+            </li>
+            
+            <li class="pub-item">
+                <div class="pub-title">Sampling Markov models under constraints: Complexity results for binary equalities and grammar membership</div>
+                <div class="pub-authors"><strong>S. Rivaud</strong>, F. Pachet</div>
+                <div class="pub-venue">arXiv:1711.10436, 2017</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/1711.10436" target="_blank" rel="noopener noreferrer">[arXiv]</a>
+                </div>
+            </li>
+        </ul>
+    </section>
 
-<header>
-    <picture>
-        <source srcset="profile-pic.webp" type="image/webp">
-        <source srcset="profile-pic.jpg" type="image/jpeg">
-        <img src="profile-pic.jpg" alt="Stéphane Rivaud" loading="lazy" width="120" height="120">
-    </picture>
-    <h1>Stéphane Rivaud</h1>
-    <p class="lead">Researcher in Machine Learning</p>
-    <div class="contact-info">
-        <p>INRIA Saclay, TAU Team</p>
-        <p>Email: <a href="mailto:stephane.a.rivaud@inria.fr">stephane.a.rivaud@inria.fr</a></p>
-        <p>Phone: (+33) 06 77 07 80 89</p>
-        <p>
-            <a href="https://github.com/stephane-rivaud" target="_blank" aria-label="Visit GitHub profile">
-                <i class="fab fa-github" aria-hidden="true"></i> GitHub
-            </a> |
-            <a href="https://www.linkedin.com/in/st%C3%A9phane-rivaud-b87458a8/" target="_blank"
-               aria-label="Visit LinkedIn profile">
-                <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
-            </a> |
-            <a href="https://scholar.google.fr/citations?user=wK1ARdQAAAAJ&hl=fr" target="_blank"
-               aria-label="Visit Google Scholar profile">
-                <i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar
-            </a>
-        </p>
-    </div>
-    <a href="curriculum_vitae.pdf" class="btn btn-primary download-btn" download target="_blank">Download CV</a>
-</header>
-
-<section id="main-content" class="research-interests">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Research Interests</h2>
-                <p><strong>Research Interests:</strong> My research focuses on efficiency and scalability of deep
-                    learning models, in both resource constrained and large-scale distributed/decentralized environment.
-                    My PhD work at Sony CSL focused on integrating application specific expert knowledge in generative
-                    modeling techniques as a way to improve the quality of generated samples. This work led to the
-                    commercialization of a music production tool by Sony Music. My first post-doc at ISIR, Sorbonne
-                    Université, focused on distributed and decentralized optimization techniques to train deep neural
-                    networks at scale, with an emphasis on model parallelism. My current work at INRIA Saclay focuses on
-                    designing training algorithms able to grow neural architecture during training by performing
-                    functional gradient descent. Such procedures aim at performing neural architecture search at a
-                    fraction of the cost required by traditional techniques. This approach is part of a broader research
-                    agenda aiming at designing more frugal AI systems.</p>
-
-                <p><strong>Background:</strong> I have a strong theoretical background in mathematics and computer
-                    science. I have experience in signal processing, generative modeling techniques, especially when
-                    applied to audio signals. Finally, I also have experience with distributed training of large scale
-                    neural architecture with a focus on optimizing resource efficiency.</p>
-                </p>
-            </div>
+    <section>
+        <h2>Research Experience</h2>
+        
+        <div class="exp-item">
+            <div class="exp-title">Neural Architecture Growth for Frugal AI</div>
+            <div class="exp-meta">INRIA Saclay, TAU Team · Sep 2024 – Present</div>
+            <ul class="details">
+                <li>Developing novel neural network growth methods within functional gradient descent framework</li>
+                <li>Contributing to MANOLO European project (Grant 101135782) on efficient AI architectures</li>
+                <li>Published growth strategies for DAG architectures (ESANN 2025)</li>
+            </ul>
         </div>
-    </div>
-</section>
-
-<section id="education" class="education">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>PhD in Artificial Intelligence</strong>, Sony CSL and University of Reims (2016-2020)
-                    </li>
-                    <li><strong>Master in Acoustics, Signal Processing and Computer Science applied to Music
-                        (ATIAM)</strong>, IRCAM, Centre George Pompidou (2014-2015)
-                    </li>
-                    <li><strong>Agrégation of Mathematics with major in Computer Science</strong>, ENS Rennes (2013)
-                    </li>
-                    <li><strong>Magistère of Mathematics</strong>, ENS Rennes (2010-2014)</li>
-                </ul>
-            </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Decentralized Training of Deep Neural Networks</div>
+            <div class="exp-meta">ISIR, Sorbonne Université · May 2022 – May 2024</div>
+            <ul class="details">
+                <li>Developed PETRA algorithm for parallel training with reversible architectures (ICLR 2025 Spotlight)</li>
+                <li>Investigated forward gradient methods matching backpropagation (ICML 2023)</li>
+                <li>Co-supervised PhD student Louis Fournier on distributed training approaches</li>
+                <li>Contributed to ANR ADONIS and PEPR IA SHARP projects</li>
+            </ul>
         </div>
-    </div>
-</section>
-
-<section id="research" class="research">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Research Experience</h2>
-                <h3>Post-doc</h3>
-                <ul>
-                    <li><strong>Neural Architecture Growth for Frugal AI</strong>, INRIA Saclay, since 2024
-                    </li>
-                    <li><strong>Decentralized Training of Deep Neural Networks</strong>, ISIR,
-                        Sorbonne Université, 2022 - 2024
-                    </li>
-                </ul>
-                <h3>Thesis (Industrial)</h3>
-                <ul>
-                    <li><strong>Integration of Expert Knowledge into Generative Models: Application to Music
-                        Production</strong>, Sony CSL, 2016 - 2020
-                    </li>
-                </ul>
-            </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Integration of Expert Knowledge in Generative Modeling</div>
+            <div class="exp-meta">Sony CSL & Université de Reims · 2016 – 2020</div>
+            <ul class="details">
+                <li>PhD research on constrained sampling methods for music generation</li>
+                <li>Developed perceptual GANs for audio synthesis</li>
+                <li>Results led to US Patent 11363377 and commercial applications</li>
+                <li>Contributed to Flow Machines (ERC Grant 641187) and ROMI (H2020 Grant 773875) projects</li>
+            </ul>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="publications" class="publications">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Publications</h2>
-                <h3>Peer-Reviewed Conference Articles</h3>
-                <ul>
-                    <li><strong>2025</strong> - Douka S., Verbockhaven M., Rudkiewicz T., Rivaud S., Landes F.,
-                        Chevallier S., Charpiat G., <i>Growth strategies for arbitrary DAG neural architectures.</i>,
-                        ESANN 2025. <a href="https://arxiv.org/abs/2501.12690" target="_blank">(Link)</a></li>
-                    <li><strong>2025</strong> - Rivaud S., Fournier L., Pumir T., Belilovsky E., Eickenberg M., Oyallon
-                        E., <i>PETRA: Parallel End-to-end Training with Reversible Architectures.</i>, ICLR 2025
-                        (spotlight). <a href="https://arxiv.org/abs/2406.02052" target="_blank">(Link)</a></li>
-                    <li><strong>2023</strong> - Fournier L., Rivaud S., Belilovsky E., Eickenberg M., Oyallon E., <i>Can
-                        forward gradient match backpropagation?</i>, ICML 2023 <a
-                            href="https://arxiv.org/abs/2306.06968"
-                            target="_blank">(Link)</a>
-                    </li>
-                    <li><strong>2016</strong> - Rivaud S., Pachet F., Roy P., <i>Sampling Markov models under binary
-                        equality constraints is hard.</i>, JFRB 2016 <a
-                            href="https://csl.sony.fr/wp-content/uploads/2016/06/rivaud-16a_.pdf"
-                            target="_blank">(Link)</a>
-                    </li>
-                </ul>
-                <h3>Open Research Articles</h3>
-                <ul>
-                    <li><strong>2017</strong> - Rivaud S., Pachet F., <i>Sampling Markov models under constraints:
-                        Complexity results for binary equalities and grammar membership.</i> Technical report. <a
-                            href="https://arxiv.org/abs/1711.10436" target="_blank">(Link)</a>
-                    </li>
-                    <li><strong>2020</strong> - Rivaud S., <i>Integration of Expert Knowledge in Generative Modelling:
-                        Application to Music Generation.</i> PhD Thesis. <a
-                            href="https://theses.fr/2020REIMS033" target="_blank">(Link)</a></li>
-                </ul>
-                <h3>Patent</h3>
-                <ul>
-                    <li><strong>2022</strong> - Deruty E., Rivaud S., <i>Addressing interferences in multi-channel audio
-                        mixing</i>, (US PATENT 11363377). <a href="https://patents.google.com/patent/US11363377B2/en"
-                                                             target="_blank">(Link)</a></li>
-                </ul>
-            </div>
+    <section>
+        <h2>Teaching</h2>
+        
+        <div class="teach-item">
+            <div class="exp-title">Applied Statistics</div>
+            <div class="exp-meta">M1 AI, Université Paris-Saclay · Fall 2024–2025</div>
+            <p>Course design and delivery for 50+ students (lectures & practical sessions) · <a href="https://github.com/stephane-rivaud/Applied-Statistics" target="_blank" rel="noopener noreferrer">Course materials</a></p>
         </div>
-    </div>
-</section>
-
-<section id="teaching" class="teaching">
-    <div class="container">
-        <div class="card">
-            <div class="card-body">
-                <h2>Teaching</h2>
-                <ul>
-                    <li><strong>Fall 2024</strong> - Applied Statistics, M1 Artificial Intelligence, Université
-                        Paris-Saclay (Lectures and Practical Sessions)
-                    </li>
-                    <li><strong>Fall 2023</strong> - Advanced Machine Learning and Deep Learning, M2 DAC, Sorbonne
-                        Université (Practical Sessions)
-                    </li>
-                    <li><strong>Fall 2019</strong> - Introduction to Neural Networks, M2 Computer Science, Université de
-                        Reims (Lectures)
-                    </li>
-                    <li><strong>Fall 2017 & 2018</strong> - Introduction to Artificial Intelligence, M1 & M2 Computer
-                        Science, Université de Reims (Lectures)
-                    </li>
-                    <li><strong>Fall 2013</strong> - Analysis and Algebra, L3 Mathematics, Université de Rennes (Oral
-                        Examiner)
-                    </li>
-                </ul>
-            </div>
+        
+        <div class="teach-item">
+            <div class="exp-title">Mathematics for Data Science</div>
+            <div class="exp-meta">M1 AI, Université Paris-Saclay · Fall 2025</div>
+            <p>Practical sessions · <a href="https://github.com/EvaJF/math4DS/tree/main" target="_blank" rel="noopener noreferrer">Course materials</a></p>
         </div>
-    </div>
-</section>
+        
+        <div class="teach-item">
+            <div class="exp-title">Advanced Machine Learning and Deep Learning</div>
+            <div class="exp-meta">M2 DAC, Sorbonne Université · Fall 2023</div>
+            <p>Practical sessions</p>
+        </div>
+        
+        <div class="teach-item">
+            <div class="exp-title">Introduction to Neural Networks</div>
+            <div class="exp-meta">M2 Computer Science, Université de Reims · Fall 2019</div>
+            <p>Lectures</p>
+        </div>
+        
+        <div class="teach-item">
+            <div class="exp-title">Introduction to Artificial Intelligence</div>
+            <div class="exp-meta">M1 & M2 Computer Science, Université de Reims · Fall 2017–2018</div>
+            <p>Lectures</p>
+        </div>
+        
+        <div class="teach-item">
+            <div class="exp-title">Analysis and Algebra</div>
+            <div class="exp-meta">L3 Mathematics, Université de Rennes · Fall 2013</div>
+            <p>Oral Examiner</p>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2025 Stéphane Rivaud | <a href="mailto:stephane.a.rivaud@inria.fr">Contact</a></p>
-</footer>
+    <section>
+        <h2>Supervision & Mentorship</h2>
+        
+        <div class="exp-item">
+            <div class="exp-title">Léo Burgund · M1 Research Intern</div>
+            <div class="exp-meta">Université Paris-Saclay · 2025</div>
+            <p><em>Transformer Architecture Growth</em></p>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Louis Fournier · PhD Student</div>
+            <div class="exp-meta">Co-supervised with Dr. Edouard Oyallon · 2022–2024</div>
+            <p><em>Parallelizable training in deep learning through local and distributed approaches</em>. Published 2 papers at ICLR and ICML.</p>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Bozhang Huang · M2 Research Intern</div>
+            <div class="exp-meta">Co-supervised with Dr. Olivier Schwander · 2022</div>
+            <p><em>Bird Vocalization Classification with Few-Shot Learning</em></p>
+        </div>
+    </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" defer
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('ServiceWorker registration successful');
-                })
-                .catch(err => {
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-        });
-    }
-</script>
+    <section>
+        <h2>Education</h2>
+        
+        <div class="exp-item">
+            <div class="exp-title">PhD in Artificial Intelligence</div>
+            <div class="exp-meta">Sony CSL & Université de Reims · 2016–2020</div>
+            <p><em>Integration of Expert Knowledge in Generative Modeling: Application to Music Production</em></p>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Master in Acoustics, Signal Processing and Computer Science (ATIAM)</div>
+            <div class="exp-meta">IRCAM, Centre Georges Pompidou · 2014–2015</div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Agrégation of Mathematics (Computer Science)</div>
+            <div class="exp-meta">ENS Rennes · 2013</div>
+        </div>
+        
+        <div class="exp-item">
+            <div class="exp-title">Magistère of Mathematics</div>
+            <div class="exp-meta">ENS Rennes · 2010–2014</div>
+        </div>
+    </section>
 </body>
 </html>
