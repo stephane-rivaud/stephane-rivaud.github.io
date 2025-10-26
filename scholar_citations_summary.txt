@@ -1,0 +1,15 @@
+Google Scholar Citation Data for Stephane Rivaud
+==============================================
+
+Profile URL: https://scholar.google.com/citations?user=wK1ARdQAAAAJ&hl=fr
+Author: Stephane Rivaud
+Affiliation: INRIA Saclay
+Extracted on: August 8, 2025
+
+Citation Metrics:
+-----------------
+Total Citations: 34 (27 since 2020)
+h-index: 3 (2 since 2020)
+i10-index: 1 (1 since 2020)
+
+This data was extracted from the Google Scholar profile and saved in JSON format as well.

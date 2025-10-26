@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stephane-rivaud.github.io/sitemap.xml
