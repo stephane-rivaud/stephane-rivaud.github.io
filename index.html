@@ -54,16 +54,16 @@
             color: #0066cc;
             text-decoration: none;
         }
-        
+
         a:hover {
             text-decoration: underline;
         }
-        
+
         .position {
             color: #666;
             margin-bottom: 20px;
         }
-        
+
         .contact {
             margin-bottom: 32px;
             color: #666;
@@ -123,16 +123,30 @@
             padding: 2px 4px;
         }
         
-        .exp-item, .teach-item {
+        .exp-item, .teach-item, .project-item {
             margin-bottom: 20px;
         }
-        
-        .exp-title {
+
+        .exp-title, .project-title {
             font-weight: 600;
         }
         
-        .exp-meta {
+        .exp-meta, .project-meta {
             color: #666;
+            font-size: 14px;
+        }
+        
+        .project-description {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .project-links {
+            margin-top: 4px;
+        }
+        
+        .project-links a {
+            margin-right: 12px;
             font-size: 14px;
         }
         
@@ -155,7 +169,7 @@
                 border-bottom-color: #444;
             }
             
-            .position, .contact, .exp-meta, .pub-venue {
+            .position, .contact, .exp-meta, .project-meta, .pub-venue {
                 color: #999;
             }
             
@@ -240,7 +254,7 @@
                 <div class="pub-venue">US Patent 11363377, June 2022</div>
                 <div class="pub-links">
                     <a href="https://patents.google.com/patent/US11363377B2/en" target="_blank" rel="noopener noreferrer">[Patent]</a>
-                </div>
+    </div>
             </li>
         </ul>
         
@@ -252,7 +266,7 @@
                 <div class="pub-venue">PhD Thesis, Université de Reims, 2020</div>
                 <div class="pub-links">
                     <a href="https://theses.fr/2020REIMS033" target="_blank" rel="noopener noreferrer">[Link]</a>
-                </div>
+    </div>
             </li>
             
             <li class="pub-item">
@@ -277,7 +291,7 @@
                 <li>Contributing to MANOLO European project (Grant 101135782) on efficient AI architectures</li>
                 <li>Published growth strategies for DAG architectures (ESANN 2025)</li>
             </ul>
-        </div>
+            </div>
         
         <div class="exp-item">
             <div class="exp-title">Decentralized Training of Deep Neural Networks</div>
@@ -299,8 +313,8 @@
                 <li>Results led to US Patent 11363377 and commercial applications</li>
                 <li>Contributed to Flow Machines (ERC Grant 641187) and ROMI (H2020 Grant 773875) projects</li>
             </ul>
-        </div>
-    </section>
+    </div>
+</section>
 
     <section>
         <h2>Teaching</h2>
@@ -309,7 +323,7 @@
             <div class="exp-title">Applied Statistics</div>
             <div class="exp-meta">M1 AI, Université Paris-Saclay · Fall 2024–2025</div>
             <p>Course design and delivery for 50+ students (lectures & practical sessions) · <a href="https://github.com/stephane-rivaud/Applied-Statistics" target="_blank" rel="noopener noreferrer">Course materials</a></p>
-        </div>
+            </div>
         
         <div class="teach-item">
             <div class="exp-title">Mathematics for Data Science</div>
@@ -321,13 +335,13 @@
             <div class="exp-title">Advanced Machine Learning and Deep Learning</div>
             <div class="exp-meta">M2 DAC, Sorbonne Université · Fall 2023</div>
             <p>Practical sessions</p>
-        </div>
+    </div>
         
         <div class="teach-item">
             <div class="exp-title">Introduction to Neural Networks</div>
             <div class="exp-meta">M2 Computer Science, Université de Reims · Fall 2019</div>
             <p>Lectures</p>
-        </div>
+            </div>
         
         <div class="teach-item">
             <div class="exp-title">Introduction to Artificial Intelligence</div>
@@ -339,8 +353,8 @@
             <div class="exp-title">Analysis and Algebra</div>
             <div class="exp-meta">L3 Mathematics, Université de Rennes · Fall 2013</div>
             <p>Oral Examiner</p>
-        </div>
-    </section>
+    </div>
+</section>
 
     <section>
         <h2>Supervision & Mentorship</h2>
@@ -349,7 +363,7 @@
             <div class="exp-title">Léo Burgund · M1 Research Intern</div>
             <div class="exp-meta">Université Paris-Saclay · 2025</div>
             <p><em>Transformer Architecture Growth</em></p>
-        </div>
+            </div>
         
         <div class="exp-item">
             <div class="exp-title">Louis Fournier · PhD Student</div>
@@ -361,8 +375,8 @@
             <div class="exp-title">Bozhang Huang · M2 Research Intern</div>
             <div class="exp-meta">Co-supervised with Dr. Olivier Schwander · 2022</div>
             <p><em>Bird Vocalization Classification with Few-Shot Learning</em></p>
-        </div>
-    </section>
+    </div>
+</section>
 
     <section>
         <h2>Education</h2>
@@ -376,7 +390,7 @@
         <div class="exp-item">
             <div class="exp-title">Master in Acoustics, Signal Processing and Computer Science (ATIAM)</div>
             <div class="exp-meta">IRCAM, Centre Georges Pompidou · 2014–2015</div>
-        </div>
+            </div>
         
         <div class="exp-item">
             <div class="exp-title">Agrégation of Mathematics (Computer Science)</div>
@@ -386,6 +400,21 @@
         <div class="exp-item">
             <div class="exp-title">Magistère of Mathematics</div>
             <div class="exp-meta">ENS Rennes · 2010–2014</div>
+    </div>
+</section>
+
+    <section>
+        <h2>Side Projects</h2>
+        
+        <div class="project-item">
+            <div class="project-title">Bird Biodiversity Dashboard - Martinique</div>
+            <div class="project-meta">Interactive dashboard · 2014–2025</div>
+            <div class="project-description">
+                <p>Comprehensive web-based dashboard for exploring bird population monitoring data from Martinique's 12-year monitoring program. Features interactive visualizations with statistical analysis including Mann-Kendall trend tests, linear regression for population trajectories, and k-means clustering for observer network analysis. The dashboard processes 114,495 observations across 47 species, providing real-time filtering, habitat-specific biodiversity trends, and species population trajectories.</p>
+            </div>
+            <div class="project-links">
+                <a href="https://stephane-rivaud.github.io/Birds-biodiversity/" target="_blank" rel="noopener noreferrer">[Dashboard]</a>
+            </div>
         </div>
     </section>
 </body>
