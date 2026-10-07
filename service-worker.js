@@ -1,5 +1,5 @@
-/* service-worker.js - v3.0.0 */
-const VERSION = '3.0.0';
+/* service-worker.js - v3.1.0 */
+const VERSION = '3.1.0';
 const CACHE_NAME = `sr-cache-v${VERSION}`;
 const RUNTIME_CACHE = `sr-runtime-v${VERSION}`;
 
@@ -211,10 +211,24 @@ async function staleWhileRevalidate(request) {
   });
 }
 
+// The sailing game is a separate app under /gommier/. Leave those requests
+// to the network so this worker cannot answer them with the portfolio shell.
+function isGommierRequest(request) {
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) {
+    return false;
+  }
+  return url.pathname === '/gommier' || url.pathname.startsWith('/gommier/');
+}
+
 // Fetch event handler with enhanced error handling
 self.addEventListener('fetch', event => {
   // Skip non-HTTP(S) requests
   if (!event.request.url.startsWith('http')) {
+    return;
+  }
+
+  if (isGommierRequest(event.request)) {
     return;
   }
   
