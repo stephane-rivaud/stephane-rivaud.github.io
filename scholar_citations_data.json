@@ -1,20 +1,20 @@
 {
-  "profile_url": "https://scholar.google.com/citations?user=wK1ARdQAAAAJ&hl=fr",
+  "profile_url": "https://scholar.google.fr/citations?user=wK1ARdQAAAAJ&hl=fr",
   "author_name": "Stephane Rivaud",
-  "affiliation": "INRIA Saclay",
+  "affiliation": "LISN / Inria Saclay, Université Paris-Saclay",
   "metrics": {
     "total_citations": {
-      "all_time": 34,
-      "since_2020": 27
+      "all_time": 69,
+      "since_2021": 61
     },
     "h_index": {
-      "all_time": 3,
-      "since_2020": 2
+      "all_time": 4,
+      "since_2021": 3
     },
     "i10_index": {
       "all_time": 1,
-      "since_2020": 1
+      "since_2021": 1
     }
   },
-  "extracted_at": "2025-08-08T21:11:29.422Z"
+  "extracted_at": "2026-10-08T23:55:00.000Z"
 }
