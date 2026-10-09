@@ -1,5 +1,5 @@
-/* service-worker.js - v3.2.0 */
-const VERSION = '3.2.0';
+/* service-worker.js - v3.2.1 */
+const VERSION = '3.2.1';
 const CACHE_NAME = `sr-cache-v${VERSION}`;
 const RUNTIME_CACHE = `sr-runtime-v${VERSION}`;
 
